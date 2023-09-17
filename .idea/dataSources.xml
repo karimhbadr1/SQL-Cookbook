@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="SQL_Cookbook" uuid="e578a817-28a6-4b10-ac6d-70a3c3c1b304">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="RDW" uuid="df7448b4-7ac8-4612-aa44-1d9e53c8d3f0">
+      <driver-ref>redshift</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.amazon.redshift.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:redshift://p1-ew1-prod1-dwmod-redshift-cluster.cvd5zwcchaw8.eu-west-1.redshift.amazonaws.com:5439/prod</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="SFDC" uuid="8699bf01-81ec-416d-b7d2-81e9fc7494c7">
+      <driver-ref>exasol</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.exasol.jdbc.EXADriver</jdbc-driver>
+      <jdbc-url>jdbc:exa:10.175.1.248:8563</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="validateservercertificate" value="0" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>

@@ -33,16 +33,26 @@ ORDER BY SUBSTR(JOB,LENGTH(JOB)-1);
 # 2.4: Sorting Mixed Alphanumeric Data
 
 #DROP VIEW V
-CREATE VIEW V
+/*CREATE VIEW V
 AS
     SELECT CONCAT(ENAME,' ',DEPTNO) AS DATA
     FROM emp;
 
-SELECT * FROM V
+SELECT * FROM V*/
+#doesnt work with MySQL
 
-SELECT DATA
-FROM V
-ORDER BY
+
 # 2.5: Dealing with Nulls When Sorting
+
+SELECT ENAME,SAL,COMM
+FROM emp
+ORDER BY 3;
+/*this gives me all nulls then salary ascending*/
+
+SELECT ENAME,SAL,COMM
+FROM emp
+ORDER BY COMM DESC ;
+/*this gives me salaries in descending order than all nulls*/
+
 
 # 2.6: Sorting on Data-Dependent Key
